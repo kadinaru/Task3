@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="309.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task7.Controller">
+    <children>
+        <VBox alignment="CENTER" layoutX="13.0" layoutY="41.0" prefHeight="38.0" prefWidth="232.0" spacing="10">
+            <Label fx:id="animationStatusLabel" text="" />
+        </VBox>
+        <Button fx:id="startButton" layoutX="14.0" layoutY="15.0" style="-fx-background-color: DARKGREEN;" text="Старт" textFill="WHITE">
+         <effect>
+            <Glow level="0.77" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+        <Button fx:id="stopButton" layoutX="73.0" layoutY="15.0" prefHeight="26.0" prefWidth="56.0" style="-fx-background-color: #8B0000;" text="Стоп" textFill="WHITE">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+        <Label fx:id="timeLabel" layoutX="145.0" layoutY="20.0" text="Текущий таймер: 0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+        <Label fx:id="statusLabel" layoutX="332.0" layoutY="20.0" text="Статус: Неактивен">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+
+        <Circle fx:id="circleOne" fill="blue" layoutX="80.0" layoutY="150.0" radius="30" stroke="black" strokeWidth="3" />
+        <Circle fx:id="circleTwo" fill="green" layoutX="200.0" layoutY="150.0" radius="30" stroke="black" strokeWidth="3" />
+    </children>
+</AnchorPane>
